@@ -1,0 +1,118 @@
+
+/* Container utama */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.12);
+    font-family: Arial, sans-serif;
+}
+
+/* Judul */
+.container h2 {
+    color: #1e40af;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/* Form */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Label */
+.label {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: left;
+    color: #334155;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Input */
+.input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    background-color: #f8fbff;
+    color: #1e293b;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Efek saat input dipilih */
+.input:focus {
+    border-color: #3b82f6;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Tombol */
+.button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efek hover tombol */
+.button:hover {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.25);
+}
+
+/* Efek saat tombol ditekan */
+.button:active {
+    transform: translateY(0);
+}
+
+/* Bagian hasil */
+.result {
+    margin-top: 25px;
+    padding: 18px;
+    background-color: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+    text-align: left;
+    color: #1e3a8a;
+    overflow-wrap: anywhere;
+}
+
+/* Teks hasil */
+.result p {
+    margin: 8px 0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Tampilan layar HP */
+@media (max-width: 480px) {
+    .container {
+        margin: 25px 15px;
+        padding: 22px;
+    }
+
+    .container h2 {
+        font-size: 21px;
+    }
+}
